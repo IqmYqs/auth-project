@@ -104,6 +104,8 @@ _NCrunch_*
 .*crunch*.local.xml
 nCrunchTemp_*
 *.mm.*
+DB.db-shm
+DB.db-wal
 AutoTest.Net/
 .sass-cache/
 [Ee]xpress/
