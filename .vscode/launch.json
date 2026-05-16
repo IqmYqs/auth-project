@@ -2,23 +2,26 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "pnpm dev (Frontend)",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/nextjs-fe/node_modules/.bin/next",
+      "args": ["dev"],
+      "cwd": "${workspaceFolder}/nextjs-fe",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
       "name": "Debug Backend (C#)",
       "type": "dotnet",
       "request": "launch",
-      "projectPath": "${workspaceFolder}/auth-dotnet-api/auth-dotnet-api.csproj"
-    },
-    {
-      "name": "Debug Frontend (Chrome)",
-      "type": "chrome",
-      "request": "launch",
-      "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}/auth-nextjs-front"
+      "projectPath": "${workspaceFolder}/dotnet-be/auth-dotnet-api.csproj"
     }
   ],
   "compounds": [
     {
       "name": "Debug Fullstack (Both)",
-      "configurations": ["Debug Backend (C#)", "Debug Frontend (Chrome)"]
+      "configurations": ["pnpm dev (Frontend)", "Debug Backend (C#)"]
     }
   ]
 }

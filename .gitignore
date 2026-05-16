@@ -23,6 +23,8 @@ nextjs-fe/*.tsbuildinfo
 nextjs-fe/next-env.d.ts
 
 # Backend - .NET
+appsettings.Development.json
+appsettings.Production.json
 appsettings.json
 *.suo
 *.user

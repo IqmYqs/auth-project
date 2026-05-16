@@ -1,0 +1,6 @@
+@auth_dotnet_api_HostAddress = http://localhost:5144
+
+GET {{auth_dotnet_api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
