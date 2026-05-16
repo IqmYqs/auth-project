@@ -5,8 +5,8 @@
       "name": "pnpm dev (Frontend)",
       "type": "node",
       "request": "launch",
-      "program": "${workspaceFolder}/nextjs-fe/node_modules/.bin/next",
-      "args": ["dev"],
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["dev"],
       "cwd": "${workspaceFolder}/nextjs-fe",
       "console": "integratedTerminal",
       "skipFiles": ["<node_internals>/**"]
