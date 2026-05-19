@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate": "npx orval"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
@@ -23,6 +24,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "orval": "^8.11.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
